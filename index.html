@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunch Invitation</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h1>You're Invited to a<br>Lunch Celebration!</h1>
+                <p class="subtext">Join us for a lovely time filled with laughter, great food, and memories.</p>
+            </div>
+            <div class="card-body">
+                <p><strong>Date:</strong> Sunday, October 29th, 2024</p>
+                <p><strong>Time:</strong> 11:00 AM</p>
+                <p><strong>Venue:</strong> Green View 3rd Floor</p>
+                <img src="https://via.placeholder.com/400x200/FFD1DC/333?text=Brunch+Time!" alt="Brunch Image" class="brunch-image">
+            </div>
+            <div class="rsvp-section">
+                <h2>Are you in? Let us know!</h2>
+                <form action="mailto:mailrajk321@gmail.com" method="POST" enctype="text/plain">
+                    <div class="input-group">
+                        <span class="material-icons">person</span>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <span class="material-icons">email</span>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input-group">
+                        <span class="material-icons">event</span>
+                        <label for="rsvp">Will you attend?</label>
+                        <select name="rsvp" id="rsvp" required>
+                            <option value="Yes">Yes, I’ll be there!</option>
+                            <option value="No">Sorry, I can’t make it</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <span class="material-icons">restaurant</span>
+                        <textarea name="food_comments" rows="4" placeholder="Any comments on food preferences or dietary restrictions?" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+            <div class="card-footer">
+                <p>Looking forward to seeing you!</p>
+                <p class="signature">- RAJ</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
